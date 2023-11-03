@@ -14,7 +14,6 @@ if __name__ == "__main__":
         "*": mul,
         "/": div,
         }
-    
 
     if operator in operators:
         a = int(sys.argv[1])
