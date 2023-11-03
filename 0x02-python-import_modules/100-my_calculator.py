@@ -7,13 +7,14 @@ if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    operator = sys.argv(2)
+    operator = sys.argv[2]
     operators = {
-        "+": add(a, b),
-        "-": sub(a, b),
-        "*": mul(a, b),
-        "/": div(a, b),
-    }
+        "+": add,
+        "-": sub,
+        "*": mul,
+        "/": div,
+        }
+    
 
     if operator in operators:
         a = int(sys.argv[1])
