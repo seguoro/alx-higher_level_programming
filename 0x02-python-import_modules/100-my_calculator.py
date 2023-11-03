@@ -9,10 +9,10 @@ if __name__ == "__main__":
         sys.exit(1)
     operator = sys.argv(2)
     operators = {
-        "+": lambda x, y: x + y,
-        "-": lambda x, y: x - y,
-        "*": lambda x, y: x * y,
-        "/": lambda x, y: x / y,
+        "+": add(a, b),
+        "-": sub(a, b),
+        "*": mul(a, b),
+        "/": div(a, b),
     }
 
     if operator in operators:
