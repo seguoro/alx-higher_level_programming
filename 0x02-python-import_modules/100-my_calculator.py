@@ -6,7 +6,7 @@ if __name__ == "__main__":
     import sys
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        sys.exit(1)
+        exit(1)
     operator = sys.argv(2)
     operators = {
         "+": add(a, b),
@@ -22,4 +22,4 @@ if __name__ == "__main__":
         print(f"{a} {operator} {b} = {result}")
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        sys.exit(1)
+        exit(1)
