@@ -2,6 +2,6 @@
 
 def print_matrix_integer(matrix=[[]]):
     for x in matrix:
-        for elemnt in x:
-            print(elemnt, end=' ')
+        for idx, elemnt in enumerate(x):
+            print(elemnt, end=" " if idx <len(x) - 1 else "")
         print()
