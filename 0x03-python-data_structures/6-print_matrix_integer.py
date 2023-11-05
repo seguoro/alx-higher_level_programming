@@ -3,5 +3,5 @@
 def print_matrix_integer(matrix=[[]]):
     for x in matrix:
         for idx, elemnt in enumerate(x):
-            print(elemnt, end=" " if idx <len(x) - 1 else "")
+            print("{:d}".format(elemnt), end=" " if idx < len(x) - 1 else "")
         print()
