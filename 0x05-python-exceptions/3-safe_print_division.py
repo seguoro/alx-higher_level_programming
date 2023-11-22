@@ -1,17 +1,11 @@
 #!/usr/bin/python3
 
 
-def safe_print_division(a, b):
-    result = None  # Initialize result outside the try block
+def safe_print_division(x, y):
     try:
-        result = a / b
-    except ZeroDivisionError:
-        return None
-    except Exception as e:
-        print("Exception:", e)
-        return None
-    else:
-        print("Inside result: {}".format(result))
-        return result
+        div = x / y
+    except (ZeroDivisionError):
+        div = None
     finally:
-        print("Finally: Inside result: {}".format(result))
+        print("Inside result: {}".format(div))
+        return div
