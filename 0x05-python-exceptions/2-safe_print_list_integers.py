@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 
 
-def safe_print_list_integers(my_list=[], x=0):
-    count = 0
-    try:
-        for i in range(x):
-            value = my_list[i]
-            if isinstance(value, int):
-                print("{:d}".format(value), end="")
-                count += 1
-        print()
-    except (IndexError, ValueError, TypeError):
-        pass
-    return count
+def safe_print_list_integers(my_custom_list=[], custom_x=0):
+    custom_count = 0
+    for custom_i in range(custom_x):
+        try:
+            print("{:d}".format(my_custom_list[custom_i]), end="")
+            custom_count += 1
+        except (ValueError, TypeError):
+            pass
+    print()
+    return custom_count
